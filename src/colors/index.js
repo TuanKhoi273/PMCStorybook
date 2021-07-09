@@ -1,0 +1,41 @@
+export default {
+  PRIMARY: {
+    blue_01: "#7FF0F7",
+    blue_02: "#00E1F0",
+    blue_03: "#02CFE0",
+    blue_04: "#0065FF",
+    blue_05: "#003CBF",
+    blue_06: "#0F3D91",
+  },
+  NEUTRAL: {
+    gray_01: "#F2F4F5",
+    gray_02: "#E5E5E5",
+    gray_03: "#B2BAC6",
+    gray_04: "#8E9AAB",
+    gray_05: "#5E6F88",
+    gray_06: "#112950",
+    gray_07: "#F2F6FE",
+    geekblue: "#9EBAED",
+    geekblue_01: "#0F62F9",
+  },
+  GRADIENT: {
+    blue: ["#03EFFF", "#0873FE"],
+  },
+  SEMATIC: {
+    green: "#5DAC46",
+    megeta: "#F33060",
+    yellow: "#FFD211",
+  },
+  ACCENT: {
+    gray: "#F7F9FA",
+    gold: "#FFFADD",
+    orange: "#FEAA48",
+    mageta_02: "#FD586B",
+    mageta_03: "#FFECE9",
+    blue: "#C8FBFF",
+    green_02: "#EBF5EF",
+    purple_01: "#F5E3FB",
+    purple_02: "#E7DDFE",
+    purple_03: "#F2F6FE",
+  },
+};
