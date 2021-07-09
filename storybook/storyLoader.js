@@ -4,29 +4,29 @@
 // https://github.com/elderfo/react-native-storybook-loader.git
 
 function loadStories() {
-  require("../src/component/Common/Avatar.stories");
-  require("../src/component/Common/Button.stories");
-  require("../src/component/Common/Colors.stories");
-  require("../src/component/Common/FloatButton.stories");
-  require("../src/component/Common/FontText.stories");
-  require("../src/component/Common/Input.stories");
-  require("../src/component/Common/Introduction.stories");
-  require("../src/component/Common/Label.stories");
-  require("../src/component/Common/RadioButton.stories");
-  require("../src/component/Common/TextButton.stories");
+  require("../src/component/Common/0-Introduction.stories");
+  require("../src/component/Common/1-Colors.stories");
+  require("../src/component/Common/2-FontText.stories");
+  require("../src/component/Common/3-Avatar.stories");
+  require("../src/component/Common/4-Button.stories");
+  require("../src/component/Common/5-FloatButton.stories");
+  require("../src/component/Common/6-Input.stories");
+  require("../src/component/Common/7-Label.stories");
+  require("../src/component/Common/8-RadioButton.stories");
+  require("../src/component/Common/9-TextButton.stories");
 }
 
 const stories = [
-  "../src/component/Common/Avatar.stories",
-  "../src/component/Common/Button.stories",
-  "../src/component/Common/Colors.stories",
-  "../src/component/Common/FloatButton.stories",
-  "../src/component/Common/FontText.stories",
-  "../src/component/Common/Input.stories",
-  "../src/component/Common/Introduction.stories",
-  "../src/component/Common/Label.stories",
-  "../src/component/Common/RadioButton.stories",
-  "../src/component/Common/TextButton.stories",
+  "../src/component/Common/0-Introduction.stories",
+  "../src/component/Common/1-Colors.stories",
+  "../src/component/Common/2-FontText.stories",
+  "../src/component/Common/3-Avatar.stories",
+  "../src/component/Common/4-Button.stories",
+  "../src/component/Common/5-FloatButton.stories",
+  "../src/component/Common/6-Input.stories",
+  "../src/component/Common/7-Label.stories",
+  "../src/component/Common/8-RadioButton.stories",
+  "../src/component/Common/9-TextButton.stories",
 ];
 
 module.exports = {

@@ -9,7 +9,8 @@
     "eject": "expo eject",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
-    "build-static-webapp": "expo build:web"
+    "build-static-webapp": "expo build:web",
+    "build-storybooks": "build-storybook -s public"
   },
   "dependencies": {
     "expo": "~42.0.0",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-essentials": "^6.3.4",
     "@storybook/addon-knobs": "^5.3",
     "@storybook/addon-links": "^5.3",
     "@storybook/addon-ondevice-actions": "^5.3.23",

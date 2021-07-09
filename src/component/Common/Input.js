@@ -14,6 +14,9 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     height: 40,
     borderColor: ColorApp.NEUTRAL.gray_02,
+    flexDirection: "row",
+    alignItems: "center",
+    // backgroundColor: "yellow",
     // backgroundColor: "white",
   },
   textInputStyle: {
@@ -22,6 +25,11 @@ const styles = StyleSheet.create({
     paddingVertical: 0,
     fontSize: 15,
     lineHeight: 22,
+    borderWidth: 0,
+  },
+  containerStyle: {
+    // backgroundColor: "red",
+    borderBottomWidth: 1,
   },
 });
 
@@ -55,24 +63,23 @@ function Input(props) {
 
   const getChild = () => {
     return (
-      <View style={containerStyle ?? {}}>
+      <View
+        style={[
+          styles.containerStyle,
+          {
+            borderColor: focus ? inputColor : ColorApp.NEUTRAL.gray_02,
+            // flexDirection: "row",
+            // alignItems: "center",
+          },
+          containerStyle ?? {},
+        ]}
+      >
         {topLabel ? (
           <FontText.SmallText style={{ color: inputColor }}>
             {topLabel}
           </FontText.SmallText>
         ) : null}
-        <View
-          style={[
-            styles.input,
-            customStyle ? customStyle : {},
-            {
-              // backgroundColor: "red",
-              borderColor: focus ? inputColor : ColorApp.NEUTRAL.gray_02,
-              flexDirection: "row",
-              alignItems: "center",
-            },
-          ]}
-        >
+        <View style={[styles.input, customStyle ? customStyle : {}]}>
           {customLeading ? customLeading : null}
           {enableLeftIcon ? (
             <IconAwesome
@@ -107,22 +114,22 @@ function Input(props) {
             value={value}
             underlineColorAndroid="transparent"
           />
-          {enableRightIcon ? (
-            <TouchableOpacity
-              onPress={() => {
-                if (onRightClick) {
-                  onRightClick();
-                }
-              }}
-            >
-              <IconAwesome
-                name={iconRightName}
-                size={20}
-                color={iconRightColor}
-                style={{ marginLeft: 4 }}
-              />
-            </TouchableOpacity>
-          ) : null}
+          {/* {enableRightIcon ? ( */}
+          <TouchableOpacity
+            onPress={() => {
+              if (onRightClick) {
+                onRightClick();
+              }
+            }}
+          >
+            <IconAwesome
+              name={iconRightName}
+              size={20}
+              color={iconRightColor}
+              style={{ marginLeft: 4 }}
+            />
+          </TouchableOpacity>
+          {/* ) : null} */}
           {customTrailing ? customTrailing : null}
         </View>
       </View>
