@@ -267,16 +267,16 @@ buttonStories
                 alert("abc");
               }}
             />
+            <TextButton
+              name="DEFAULT"
+              state={ButtonState.DEFAULT}
+              customStyle={{ marginTop: 16, marginLeft: 16 }}
+              // enableButtonLeft={true}
+              onPress={() => {
+                alert("abc");
+              }}
+            />
           </View>
-          <TextButton
-            name="DEFAULT"
-            state={ButtonState.DEFAULT}
-            customStyle={{ marginTop: 16 }}
-            // enableButtonLeft={true}
-            onPress={() => {
-              alert("abc");
-            }}
-          />
 
           <FontText.Heading2
             style={{ marginVertical: 12, color: ColorApp.PRIMARY.blue_05 }}

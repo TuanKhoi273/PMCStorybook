@@ -172,11 +172,11 @@ inputStories
           />
 
           <Markdown>{`
-          <Input
-          placeholder={"Your Phone Number"}
-          enableRightIcon={true}
-          iconRightColor={"red"}
-        />
+         <Input
+         placeholder={"Your Phone Number"}
+         enableRightIcon={true}
+         iconRightColor={"red"}
+       />
               `}</Markdown>
 
           <FontText.Heading2
@@ -227,17 +227,17 @@ inputStories
           />
 
           <Markdown>{`
-           <Input
-           containerStyle={{ marginTop: 16 }}
-           placeholder={"Your Phone Number"}
-           enableRightIcon={true}
-           enableLeftIcon={true}
-           onRightClick={() => {
-             alert("abc");
-           }}
-           // keyboardType={"password"}
-           topLabel="test"
-         />
+          <Input
+          // containerStyle={{ marginTop: 16 }}
+          placeholder={"Your Phone Number"}
+          enableRightIcon={true}
+          enableLeftIcon={true}
+          onRightClick={() => {
+            alert("abc");
+          }}
+          // keyboardType={"password"}
+          topLabel="test"
+        />
               `}</Markdown>
 
           <FontText.Heading2
@@ -263,21 +263,21 @@ inputStories
           />
 
           <Markdown>{`
-           <Input
-           customStyle={{
-             marginVertical: 16,
-             borderWidth: 1,
-             borderRadius: 4,
-             paddingHorizontal: 16,
-           }}
-           placeholder={"Your Phone Number"}
-           enableRightIcon={true}
-           enableLeftIcon={true}
-           onRightClick={() => {
-             alert("abc");
-           }}
-           topLabel="test"
-         />
+          <Input
+          containerStyle={{
+            marginVertical: 16,
+            borderWidth: 1,
+            borderRadius: 4,
+            paddingHorizontal: 16,
+          }}
+          placeholder={"Your Phone Number"}
+          enableRightIcon={true}
+          enableLeftIcon={true}
+          onRightClick={() => {
+            alert("abc");
+          }}
+          topLabel="test"
+        />
               `}</Markdown>
           <View style={{ height: 56 }} />
         </View>
